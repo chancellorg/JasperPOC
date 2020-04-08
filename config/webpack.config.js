@@ -324,12 +324,6 @@ module.exports = function(webpackEnv) {
         // Disable require.ensure as it's not a standard language feature.
         { parser: { requireEnsure: false } },
 
-        {
-          test: /\.(html)$/,
-          use: {
-            loader: 'html-loader'
-          }
-        },
         // First, run the linter.
         // It's important to do this before Babel processes the JS.
         {
@@ -362,7 +356,7 @@ module.exports = function(webpackEnv) {
               loader: require.resolve('url-loader'),
               options: {
                 limit: imageInlineSizeLimit,
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: 'chancellor/[name].[hash:8].[ext]',
               },
             },
             // Process application JS with Babel.
@@ -397,6 +391,12 @@ module.exports = function(webpackEnv) {
                 cacheCompression: false,
                 compact: isEnvProduction,
               },
+            },
+            {
+              test: /\.(html)$/,
+              use: {
+                loader: 'html-loader'
+              }
             },
             // Process any JS outside of the app with Babel.
             // Unlike the application JS, we only compile the standard ES features.
@@ -504,7 +504,7 @@ module.exports = function(webpackEnv) {
               // by webpacks internal loaders.
               exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
               options: {
-                name: 'static/media/[name].[hash:8].[ext]',
+                name: 'images/[name]',
               },
             },
             // ** STOP ** Are you adding a new loader?

@@ -1,14 +1,17 @@
-import React, { Component } from 'react';
-// import Page from './report.html';
+import React from 'react';
+import Iframe from "react-iframe"
 
-export default class Report extends Component {
-    render(){
-        const Page = require('./report.html');
-        const htmlDoc = {__html: Page};
+class Report extends React.Component {
 
-        // images does not load directly
-        return (<div><div dangerouslySetInnerHTML={htmlDoc} />
+    render () {
+        return ( <div ref={this.props.reportRef}>
 
-        </div>);
+                <Iframe src={"http://jasperpoc-wacky-panda-vv.cfapps.io/report.html"}
+                        height={"1000px"} width={"2000px"}></Iframe>
+
+                </div>
+        );
     }
 }
+
+export default Report;

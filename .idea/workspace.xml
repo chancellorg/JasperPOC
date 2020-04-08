@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36e36c72-ecc2-4787-a391-afdae0ee2317" name="Default Changelist" comment="" />
+    <list default="true" id="36e36c72-ecc2-4787-a391-afdae0ee2317" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poc/Japer_POC_2020-03-26_10-06-04.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/poc/Japer_POC_2020-03-26_10-06-04.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poc/Japer_POC_adjusted.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/poc/Japer_POC_adjusted.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poc/Report.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/poc/Report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poc/ReportEvent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/poc/ReportEvent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/poc/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/poc/report.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +27,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Zs3r7sMCkp47r4gIZEUJEwDSsb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/poc" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -31,14 +49,24 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Chancellor\WebstormProjects\jasper_poc\src\poc" />
+      <recent name="C:\Users\Chancellor\WebstormProjects\jasper_poc" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Chancellor\WebstormProjects\jasper_poc\src\poc" />
+      <recent name="C:\Users\Chancellor\WebstormProjects\jasper_poc\src\poc\images" />
+      <recent name="C:\Users\Chancellor\WebstormProjects\jasper_poc\src\temp" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="JavaScript Debug.report.html">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="report.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jasper_poc/src/poc/report.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
@@ -51,6 +79,11 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.report.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -67,6 +100,17 @@
       <workItem from="1585635389540" duration="152000" />
       <workItem from="1585635940313" duration="3416000" />
       <workItem from="1585653360866" duration="10484000" />
+      <workItem from="1585729087902" duration="2232000" />
+      <workItem from="1585827502979" duration="5973000" />
+      <workItem from="1585837247160" duration="6303000" />
+      <workItem from="1585903320325" duration="4200000" />
+      <workItem from="1585910123318" duration="13433000" />
+      <workItem from="1586181581782" duration="4598000" />
+      <workItem from="1586197308032" duration="2001000" />
+      <workItem from="1586250381981" duration="1793000" />
+      <workItem from="1586253623987" duration="2220000" />
+      <workItem from="1586300147326" duration="1951000" />
+      <workItem from="1586332379257" duration="12426000" />
     </task>
     <servers />
   </component>
@@ -78,6 +122,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="745" y="183" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1585636099487" />
+    <state x="715" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585909237051">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1585909237051" />
     <state width="1899" height="362" key="GridCell.Tab.0.bottom" timestamp="1585635541022">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -94,5 +142,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="362" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1360.728@0.0.1920.1040" timestamp="1585635541022" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1586336808867">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586336808867" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585840682989">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1585840682989" />
   </component>
 </project>
