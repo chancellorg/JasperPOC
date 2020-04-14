@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Report extends React.Component {
+class OrigReport extends React.Component {
 
 
     render () {
@@ -15,4 +15,4 @@ class Report extends React.Component {
     }
 }
 
-export default Report;
+export default OrigReport;

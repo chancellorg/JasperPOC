@@ -4,15 +4,54 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <style type="text/css">
     a {text-decoration: none}
+    .users {
+      table-layout: fixed;
+      width: 611px;
+      white-space: nowrap;
+    }
+
+
   </style>
+
+
+
+  <script>
+    function process(e,idx) {
+      const table = document.getElementById("myTable");
+      let to_process = false;
+      const begin_tag = "sect_begin_" + idx;
+      const end_tag = "sect_end_" + idx;
+
+      for (let i = 0; i <table.rows.length ; i++) {
+        const row = table.rows[i];
+        if(row.id === begin_tag) to_process = true;
+
+        if(to_process) {
+          if (row.style.display === "none") {
+            row.style.display = "block";
+          } else {
+            row.style.display = "none";
+          }
+        }
+
+        if(row.id === end_tag) to_process = false;
+      }
+
+      if(e.innerHTML === "[+]") e.innerHTML = "[-]";
+      else e.innerHTML="[+]";
+    }
+
+
+  </script>
+
 </head>
 <body text="#000000" link="#000000" alink="#000000" vlink="#000000">
 <table width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr>
-  <td width="50%"></td>
-  <td align="center">
+  <td></td>
+  <td align="center" width="611px">
 <a name="JR_PAGE_ANCHOR_0_1"></a>
-<table style="width: 611px; border-collapse: collapse" cellpadding="0" cellspacing="0" border="0" bgcolor="white">
+<table style="width: 611px; border-collapse: collapse" cellpadding="0" cellspacing="0" border="0" bgcolor="white" id="myTable">
 <tr style="height: 1px;">
   <td><img alt="" src="images/px" style="width: 24px; height: 1px;"/></td>
   <td><img alt="" src="images/px" style="width: 5px; height: 1px;"/></td>
@@ -72,14 +111,20 @@
   <td colspan="33"><img alt="" src="images/px" style="width: 447px; height: 32px;"/></td>
 </tr>
 <tr valign="top" style="height: 16px;">
-  <td colspan="48"><img alt="" src="images/px" style="width: 611px; height: 16px;"/></td>
+  <td colspan="48"></td>
 </tr>
+
 <tr valign="top" style="height: 22px;">
   <td colspan="20"><img alt="" src="images/px" style="width: 233px; height: 22px;"/></td>
   <td colspan="12" rowspan="2" id="invoice" class="heading" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 22px; line-height: normal; font-weight: bold;">Invoice</span></p></td>
   <td colspan="16"><img alt="" src="images/px" style="width: 253px; height: 22px;"/></td>
 </tr>
-<tr valign="top" height="8px">
+  <!-- Invoice Heading-->
+<tr valign="top" height="8px"></tr>
+  <td colspan="48"><div><a onclick="process(this,1)">[-]</a></div></td>
+</tr>
+
+<tr valign="top" height="8px" id="sect_begin_1">
   <td colspan="2"><img alt="" src="images/px" style="width: 29px; height: 8px;"/></td>
   <td colspan="14" rowspan="2" id="company_name" class="param" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 9px; line-height: normal;">Delta Dental Insurance Company</span></p></td>
   <td colspan="4"><img alt="" src="images/px" style="width: 51px; height: 8px;"/></td>
@@ -192,12 +237,15 @@
   <td colspan="4"><img alt="" src="images/px" style="width: 52px; height: 3px;"/></td>
   <td colspan="2"><img alt="" src="images/px" style="width: 24px; height: 3px;"/></td>
 </tr>
-<tr valign="top">
+<tr valign="top" id="sect_end_1">
   <td colspan="4"><img alt="" src="images/px" style="width: 31px; height: 10px;"/></td>
   <td colspan="4"><img alt="" src="images/px" style="width: 52px; height: 10px;"/></td>
   <td colspan="11" rowspan="2" id="findept_contact" class="param" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 9px; line-height: normal;">1-800-735-2929</span></p></td>
   <td colspan="2"><img alt="" src="images/px" style="width: 24px; height: 10px;"/></td>
 </tr>
+  <!-- Invoice Heading and Contacts Ending-->
+
+
 <tr valign="top">
   <td colspan="35"><img alt="" src="images/px" style="width: 391px; height: 3px;"/></td>
   <td colspan="2"><img alt="" src="images/px" style="width: 24px; height: 3px;"/></td>
@@ -205,6 +253,9 @@
 <tr valign="top">
   <td colspan="48"><img alt="" src="images/px" style="width: 611px; height: 8px;"/></td>
 </tr>
+
+  <!-- Invoice Specifics-->
+
 <tr valign="top">
   <td colspan="5"><img alt="" src="images/px" style="width: 33px; height: 1px;"/></td>
   <td colspan="3" rowspan="2" id="invoice_number_text" class="static_text" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 11px; line-height: normal; font-weight: bold;">Invoice number:</span></p></td>
@@ -336,7 +387,18 @@
 <tr valign="top">
   <td colspan="48"><img alt="" src="images/px" style="width: 611px; height: 6px;"/></td>
 </tr>
-<tr valign="top">
+
+<!--<tr valign="top" height="8px">-->
+<!--  <td colspan="2"><div><a onclick="process(this,2)">[-]</a></div></td>-->
+<!--  <td colspan="32"></td>-->
+<!--</tr>-->
+
+
+  <tr valign="top" height="8px"></tr>
+  <td colspan="48"><div><a onclick="process(this,2)">[-]</a></div></td>
+  </tr>
+
+<tr valign="top" id="sect_begin_2">
   <td colspan="2"><img alt="" src="images/px" style="width: 29px; height: 16px;"/></td>
   <td colspan="8" id="payment_options" class="static_text" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 12px; line-height: normal; font-weight: bold;">Payment Options</span></p></td>
   <td colspan="38"><img alt="" src="images/px" style="width: 468px; height: 16px;"/></td>
@@ -420,13 +482,16 @@
 <tr valign="top">
   <td colspan="48"><img alt="" src="images/px" style="width: 611px; height: 1px;"/></td>
 </tr>
-<tr valign="top">
+<tr valign="top" id="sect_end_2">
   <td colspan="3"><img alt="" src="images/px" style="width: 30px; height: 14px;"/></td>
   <td colspan="19" id="electronic_remit6" class="param" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 10px; line-height: normal;">test value 6</span></p></td>
   <td colspan="4"><img alt="" src="images/px" style="width: 33px; height: 14px;"/></td>
   <td colspan="16" id="mailing_remit6" class="param" style=" vertical-align: middle;"><p style="overflow: hidden; text-indent: 0px; "><span style="font-family: Gotham; color: #000000; font-size: 10px; line-height: normal;">test value 6</span></p></td>
   <td colspan="6"><img alt="" src="images/px" style="width: 102px; height: 14px;"/></td>
 </tr>
+
+
+
 <tr valign="top">
   <td colspan="48"><img alt="" src="images/px" style="width: 611px; height: 19px;"/></td>
 </tr>
@@ -460,7 +525,7 @@
 </tr>
 </table>
 </td>
-  <td width="50%"></td>
+  <td></td>
 </tr>
 </table>
 </body>

@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <script>
+        function process(e) {
+            if(e.innerHTML=="[+]") e.innerHTML = "[-]";
+            else e.innerHTML="[+]";
+        }
+    </script>
 </head>
 <body>
-$END$
+
+<div><a onclick="process(this)">[+]</a></div>
+
 </body>
 </html>
